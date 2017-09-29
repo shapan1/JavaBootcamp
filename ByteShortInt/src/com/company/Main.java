@@ -3,6 +3,8 @@ package com.company;
 //Type
 
 
+import sun.font.TrueTypeFont;
+
 public class Main {
     public static void main(String[] args) {
 //        Min Max
@@ -34,5 +36,31 @@ public class Main {
         int res = Integer.parseInt(num) + 3;
 
         System.out.println(res);
+
+        //Operators
+        boolean isSmart = true;
+        if ((Integer.parseInt(num) < 2) && (isSmart == true)){
+            System.out.println("you never see this");
+        }
+        else{
+            System.out.println("oops");
+        }
+
+        boolean isDumb = false;
+
+
+        // if isDumb, then isDumb, else not isDumb
+        boolean wasDumb = isDumb ? true : false;
+        System.out.println(wasDumb);
+
+
+        //Challenge
+        double num1 = 20d;
+        double num2 = 80;
+        double remain = (((num1 + num2) * 25) % 3) / 40;
+
+        if (remain <= 20){
+            System.out.println("total was over the limit");
+        }
     }
 }
